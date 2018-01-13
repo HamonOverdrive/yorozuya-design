@@ -1,0 +1,215 @@
+body {
+    line-height: 1.8;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+h3{
+    font-family: Avenir;
+}
+
+
+/*navbar hamburger menu for small screens or shorter*/
+.navbar-toggle .icon-bar{
+    position: relative;
+    transition: all 500ms ease-in-out;
+    width: 30px;
+    height: 2px;
+}
+
+.navbar-toggle .icon-bar:nth-of-type(1){
+    background-color: #fff;
+}
+.navbar-toggle .icon-bar:nth-of-type(2){
+    top: 1px; background-color: #fff;
+}
+.navbar-toggle .icon-bar:nth-of-type(3){
+    top: 2px; background-color: #fff;
+}
+.navbar-toggle.active .icon-bar:nth-of-type(1){
+    top: 6px;
+    transform: rotate(45deg);
+}
+.navbar-toggle.active .icon-bar:nth-of-type(2){
+    background-color: transparent;
+}
+.navbar-toggle.active .icon-bar:nth-of-type(3){
+    top: -6px;
+    transform: rotate(-45deg);
+}
+/*navbar toggle end*/
+
+
+@media only screen and (max-width: 768px){
+    .jain-container .navbar-default{
+        position: absolute;
+        top: 0;
+        background-color: transparent;
+        border: none;
+    }
+    .navbar-collapse{
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        clip-path: circle(0px at top right);
+        background-color: rgba(0,0,0,0.79);
+        transition: all 500ms ease-in-out;
+        width: 100%; border: none;
+    }
+    .collapse{
+        /*this changed the actually menu expanded out*/
+        clip-path: circle(150% at top right);
+        border: none;
+    }
+    .navbar-nav.nav li a{
+        margin: 10px;
+    }
+    /*this changes the toggle button*/
+    .navbar-toggle{
+        top: -3em;
+    }
+
+    .half-two{
+        margin-right: -29px;
+        padding-bottom: 382px;
+        color: #2aabd2;
+    }
+}
+
+/*navbar and header css*/
+.jain-container .navbar-default{
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    border: none;
+    transition: all 1s;
+}
+
+.header-border{
+    height: 120px;
+    border: 0;
+    border-bottom: 1px solid #514C4D;
+}
+
+
+.navbar-nav.nav li a{
+    color: #ffffff;
+    font-size: 18px;
+    font-family: Avenir;
+    opacity: 0.6;
+    font-weight: bold;
+    text-shadow: 0 0 2px black;
+}
+/*navbar and header end*/
+
+/*page banner*/
+#banner-back{
+    padding: 0;
+    /*this fixed the white blank row appearing when screen minimized a little*/
+    margin-bottom: -14px;
+}
+
+#banner-back img{
+    height: 635px;
+    width: 100%;
+}
+
+.banner-phrase h1{
+    margin-top: -35%;
+    margin-left: 37%;
+    font-family: Avenir;
+    float: center;
+    color: #fff;
+}
+
+.banner-phrase p{
+    margin-left: 42%;
+    color: #fff;
+}
+/*page banner css ends here*/
+
+/*section two about*/
+.back-color {
+	background-color: #151515;
+    border-color: #151515;
+    padding: 95px;
+    margin-top: 0;
+}
+
+.color-wht {
+    color: #fff;
+}
+/*section two about end*/
+
+/*portfolio css*/
+.portfolio-contain{
+    padding-top: 95px;
+}
+
+#inline-paragraph{
+    padding-top: 20px;
+    padding-bottom: 95px;
+}
+
+.grid-box{
+    padding: 0;
+}
+
+.grid-box a img{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    display: block
+}
+/*portfolio end*/
+
+/*services css start*/
+.services-container{
+    padding: 0;
+    width: 100%;
+}
+
+.services-container .myHalfCol{
+    padding: 0;
+    margin: 0;
+}
+
+.half-one{
+    margin-left: -29px;
+    padding-bottom: 0;
+}
+
+.half-two{
+    margin-right: -29px;
+    padding-bottom: 382px;
+     width: 52.22%;
+}
+
+.half-two h3{
+    padding-top: 55px;
+    color: #fff;
+}
+
+.half-two p{
+    color: #fff;
+}
+/*services end*/
+
+/*contact css*/
+
+.contact-block-one{
+    background-color: #f2f2f2;
+    padding: 95px;
+    margin-top: 0;
+}
+
+.contact-block-two{
+    padding: 95px;
+}
+/*contact end*/
+/*footer css*/
+.page-footer{
+    background-color: #333333;
+    color: #fff;
+    padding: 95px;
+}
