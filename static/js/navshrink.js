@@ -15,3 +15,12 @@ $(document).ready(function () {
 
      }
 });
+
+$('a[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    var navHeight = parseInt($('#menuBar').css('height'));
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top-navHeight
+        }, 700);}});
