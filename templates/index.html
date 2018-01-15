@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Yorozuya Design</title>
+    <title>Yorozuya Design | Web development</title>
     <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="{{ url_for('static', filename='css/custom.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/animated.css') }}" rel="stylesheet">
 	<link rel="shortcut icon" href="{{ url_for('static', filename='#') }}">
 </head>
 <body>
@@ -52,8 +53,8 @@
         <img src="http://i.imgur.com/9iHvxm9.png" class="img-responsive">
         <div class="container">
             <div class="banner-phrase">
-                <h1><strong>Yorozuya Design</strong></h1>
-                <p>No website is too much</p>
+                <h1 class="animated fadeIn"><strong>Yorozuya Design</strong></h1>
+                <h4 class="animated fadeInUp">No website is too much</h4>
             </div>
         </div>
 
@@ -75,8 +76,8 @@
                         <p class="about-para">- Robin Lee Company Owner</p>
                     </div>
                     <div class="col-md-4">
-{#                        possible put some image here#}
-                        <p>dsaflkjdsfa;dsf</p>
+                        {# possible put some image here#}
+                        <img alt="">
                     </div>
                 </div>
             </div>
@@ -105,26 +106,66 @@
         {#Portfolio Grid Items start here#}
         <div class="row photos">
             <div class="col-md-4 grid-box">
-                <a href="#"><img class="img-responsive" src="http://gilbertclinic.com/wp-content/uploads/2014/01/img-low-back-pain-e1481922023892-1200x600.jpg">
-
-                </a>
+                <div class="gallery-image">
+                    <a href="#"><img class="img-responsive" src="http://gilbertclinic.com/wp-content/uploads/2014/01/img-low-back-pain-e1481922023892-1200x600.jpg">
+                        <div class="gallery-text">
+                            <h3>Back Hacks</h3>
+                            <p>User based injury discussion board (Not Deployed)</p>
+                        </div>
+                    </a>
+                </div>
             </div>
             <div class="col-md-4 grid-box">
-                <a href="#"><img class="img-responsive" src="https://i1.wp.com/files.hungryforever.com/wp-content/uploads/2017/08/04160648/o-DUNKIN-DONUTS-facebook.jpg?fit=1200%2C600"></a>
+                <div class="gallery-image">
+                    <a href="#"><img class="img-responsive" src="https://i1.wp.com/files.hungryforever.com/wp-content/uploads/2017/08/04160648/o-DUNKIN-DONUTS-facebook.jpg?fit=1200%2C600">
+                        <div class="gallery-text">
+                            <h3>Yummy Donuts</h3>
+                            <p>Business Donut static website (Not Deployed)</p>
+                        </div>
+                    </a>
+                </div>
             </div>
             <div class="col-md-4 grid-box">
-                <a href="#"><img class="img-responsive" src="http://www.gameslayercorps.it/wp-content/uploads/2015/10/TEKKEN-7-1200x600.jpg"></a>
+                <div class="gallery-image">
+                    <a href="#"><img class="img-responsive" src="http://www.gameslayercorps.it/wp-content/uploads/2015/10/TEKKEN-7-1200x600.jpg">
+                        <div class="gallery-text">
+                            <h3>Tekken G-Corp</h3>
+                            <p>Tekken strategies and provides frame data for users (Coming soon!)</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="row photos">
             <div class="col-md-4 grid-box">
-                <a href="#"><img class="img-responsive" src="http://sitepasmal.com/wp-content/uploads/2017/07/Website-Under-Construction-1200x600.jpg"></a>
+                <div class="gallery-image">
+                    <a href="#"><img class="img-responsive" src="http://sitepasmal.com/wp-content/uploads/2017/07/Website-Under-Construction-1200x600.jpg">
+                        <div class="gallery-text">
+                            <h3>TBA</h3>
+                            <p>---</p>
+                        </div>
+                    </a>
+                </div>
             </div>
             <div class="col-md-4 grid-box">
-                <a href="#"><img class="img-responsive" src="http://sitepasmal.com/wp-content/uploads/2017/07/Website-Under-Construction-1200x600.jpg"></a>
+                <div class="gallery-image">
+                    <a href="#"><img class="img-responsive" src="http://sitepasmal.com/wp-content/uploads/2017/07/Website-Under-Construction-1200x600.jpg">
+                        <div class="gallery-text">
+                            <h3>TBA</h3>
+                            <p>---</p>
+                        </div>
+                    </a>
+                </div>
             </div>
             <div class="col-md-4 grid-box">
-                <a href="#"><img class="img-responsive" src="http://sitepasmal.com/wp-content/uploads/2017/07/Website-Under-Construction-1200x600.jpg"></a>
+                <div class="gallery-image">
+                    <a href="#"><img class="img-responsive" src="http://sitepasmal.com/wp-content/uploads/2017/07/Website-Under-Construction-1200x600.jpg">
+                        <div class="gallery-text">
+                            <h3>TBA</h3>
+                            <p>---</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
         {#Portfolio grid ends#}
@@ -142,8 +183,8 @@
             </div>
             <div class="col-md-6 half-two" style="background-color: black;">
                 <div class="col-md-8 col-md-offset-2">
-                    <h3 class="major">Services</h3>
-                    <p>With us setting up online services is easy. No hidden costs and monthly fees as our services will be
+                    <h3 class="major wow slideInRight">Services</h3>
+                    <p class="wow slideInRight">With us setting up online services is easy. No hidden costs and monthly fees as our services will be
                         consistent and professional.</p>
                 </div>
             </div>
@@ -169,34 +210,36 @@
         <div class="container-fluid contact-block-two">
             <div class="container">
                 <div class="col-md-9 col-md-offset-3">
-                    <div class="row">
-                        <div class="col-md-6 form-group">
-                            <input type="text" class="form-control" id="InputName1" placeholder="First Name">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" class="form-control" id="InputName1" placeholder="First Name">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="text" class="form-control" id="InputName2" placeholder="Last Name">
+                            </div>
                         </div>
-                        <div class="col-md-6 form-group">
-                            <input type="text" class="form-control" id="InputName2" placeholder="Last Name">
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="email" class="form-control" id="InputEmail" placeholder="Email address">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <select class="form-control">
+                                  <option>Project</option>
+                                  <option>Web</option>
+                                  <option>Data Anaylsis</option>
+                                  <option>Brands</option>
+                                  <option>Other</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 form-group">
-                            <input type="email" class="form-control" id="InputEmail" placeholder="Email address">
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <textarea class="form-control" rows="3" placeholder="Message us"></textarea>
+                            </div>
                         </div>
-                        <div class="col-md-6 form-group">
-                            <select class="form-control">
-                              <option>Project</option>
-                              <option>Web</option>
-                              <option>Data Anaylsis</option>
-                              <option>Brands</option>
-                              <option>Other</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 form-group">
-                            <textarea class="form-control" rows="3" placeholder="Message us"></textarea>
-                        </div>
-                    </div>
-                    <input class="btn btn-default" type="submit" value="Submit">
+                        <input class="btn btn-default" type="submit" value="Submit">
+                    </form>
                 </div>
             </div>
         </div>
@@ -229,7 +272,6 @@
 {#footer end#}
 
 
-{#https://www.metmuseum.org/toah/images/hb/hb_1975.268.48.jpg#}
 {# jQuery script #}
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"
 			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -244,5 +286,6 @@
 {#bootstrap core javascript#}
 <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/navshrink.js') }}"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script><script>new WOW().init();</script>
 </body>
 </html>
