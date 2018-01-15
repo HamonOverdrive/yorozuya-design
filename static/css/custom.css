@@ -2,15 +2,10 @@ body {
     line-height: 1.8;
     font-size: 1.4rem;
     margin: 0;
-    font-family: Avenir;
-}
-
-h3{
-    font-family: Avenir;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
-/*navbar hamburger menu for small screens or shorter*/
 .navbar-toggle .icon-bar{
     position: relative;
     transition: all 500ms ease-in-out;
@@ -38,11 +33,10 @@ h3{
     top: -6px;
     transform: rotate(-45deg);
 }
-/*navbar toggle end*/
 
 
 @media only screen and (max-width: 768px){
-    .jain-container .navbar-default{
+    .first-container .navbar-default{
         position: absolute;
         top: 0;
         background-color: transparent;
@@ -77,8 +71,8 @@ h3{
     }
 }
 
-/*navbar and header css*/
-.jain-container .navbar-default{
+
+.first-container .navbar-default{
     position: fixed;
     top: 0;
     background-color: transparent;
@@ -87,24 +81,19 @@ h3{
 }
 
 .header-border{
-    height: 120px;
+    height: 90px;
     border: 0;
     border-bottom: 1px solid #514C4D;
 }
 
-
 .navbar-nav.nav li a{
     color: #ffffff;
     font-size: 18px;
-    font-family: Avenir;
+    font-family: 'Open Sans', sans-serif;
     opacity: 0.6;
     font-weight: bold;
-    text-shadow: 0 0 2px black;
+    text-shadow: 0 0 1px black;
 }
-/*navbar and header end*/
-
-/*page banner*/
-
 
 
 #banner-back img {
@@ -159,7 +148,6 @@ h3{
 .banner-phrase h1{
     margin-top: -35%;
     margin-left: 37%;
-    font-family: Avenir;
     float: center;
     color: #fff;
     animation-delay: 1.5s;
@@ -170,10 +158,9 @@ h3{
     color: #fff;
     animation-delay: 2s;
 }
-/*page banner css ends here*/
 
-/*section two about*/
-.back-color {
+
+.about-back-color {
 	background-color: #151515;
     border-color: #151515;
     padding: 95px;
@@ -186,12 +173,17 @@ h3{
 
 .about-para{
     color: #999;
+    padding-top: 20px;
 }
-/*section two about end*/
+
 
 /*portfolio css*/
 .portfolio-contain{
     padding-top: 95px;
+}
+
+#portfolio-header{
+    padding-left: 5px;
 }
 
 #inline-paragraph{
@@ -220,8 +212,8 @@ h3{
     position: absolute;
     top: 0; right: 0;
     bottom: 0; left: 0;
-    width: 450px;
-    height: 225px;
+    width: 600px;
+    height: 279px;
     text-align: center;
     background-color: rgba(0,0,0,0.8);
     opacity: 0;
@@ -240,7 +232,8 @@ h3{
     color: white;
     position: absolute;
     left: 0;
-    top: 25%;
+    right: 25%;
+    top: 50%;
     width: 100%;
     text-align: center;
 }
@@ -249,7 +242,7 @@ h3{
     color: white;
     position: absolute;
     left: 0;
-    top: 25%;
+    top: 50%;
     width: 100%;
     text-align: center;
 }
@@ -269,14 +262,13 @@ h3{
 }
 
 .half-one{
-    margin-left: -29px;
+    margin-left: -27px;
     padding-bottom: 0;
 }
 
 .half-two{
-    margin-right: -29px;
     padding-bottom: 382px;
-     width: 52.22%;
+    width: 52%;
 }
 
 .half-two h3{
@@ -287,8 +279,7 @@ h3{
 .half-two p{
     color: #fff;
 }
-/*services end*/
-/*contact css*/
+
 
 .contact-phrase{
     padding-top: 20px;
@@ -303,11 +294,14 @@ h3{
 .contact-block-two{
     padding: 95px;
 }
-/*contact end*/
-/*footer css*/
+
+#submit-button{
+    width: 10em;  height: 3em;
+}
+
+
 .page-footer{
     background-color: #333333;
     color: #fff;
     padding: 95px;
 }
-/*footer end*/

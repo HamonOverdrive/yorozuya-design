@@ -8,8 +8,10 @@ $(document).ready(function () {
              if(scroll_start > offset.top){
                  $('.navbar-default').css('background-color', '#fff')
                  $('.navbar-nav li a').css('opacity', '0.6')
+                 $('.navbar-nav li a').css('color', '#000000')
              } else{
                 $('.navbar-default').css('background-color', 'transparent')
+                 $('.navbar-nav li a').css('color', '#fff')
              }
          });
 
