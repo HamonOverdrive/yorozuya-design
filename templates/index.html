@@ -8,7 +8,7 @@
     <link href="{{ url_for('static', filename='css/custom.css') }}" rel="stylesheet">
     <link href="{{ url_for('static', filename='css/animated.css') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700i" rel="stylesheet">
-	<link rel="shortcut icon" href="{{ url_for('static', filename='#') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='#') }}">
 </head>
 <body>
 
@@ -18,12 +18,15 @@
         <div class="container-fluid header-border" style="padding-left: 0;padding-right: 0">
             <div class="container" style="margin-top: 2em;padding-left: 0;padding-right: 0">
                 <div class="col-md-3">
-                    <img class="img-responsive" src="http://cdn.edgecast.steamstatic.com/steamcommunity/public/images/avatars/41/4186d5a749ff64fc5bbc892299250f181a46f702_full.jpg" alt="" style="width: 44px;">
+                    <img class="img-responsive"
+                         src="http://cdn.edgecast.steamstatic.com/steamcommunity/public/images/avatars/41/4186d5a749ff64fc5bbc892299250f181a46f702_full.jpg"
+                         alt="" style="width: 44px;">
                 </div>
 
                 <div class="col-md-9" style="padding-left: 0;padding-right: 0">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" style="background-color: transparent; border: none;">
+                        <button type="button" class="navbar-toggle" data-target=".navbar-collapse"
+                                data-toggle="collapse" style="background-color: transparent; border: none;">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -46,23 +49,23 @@
 
         </div>
     </nav>
-{#navbar code end#}
+    {#navbar code end#}
 
-{# Page banner #}
-<section id="home">
-    <div class="container-fluid" id="banner-back">
-        <img src="http://i.imgur.com/9iHvxm9.png" class="img-responsive">
-        <div class="container">
-            <div class="banner-phrase">
-                <h1 class="animated fadeIn"><strong>Yorozuya Design</strong></h1>
-                <h4 class="animated fadeInUp">Full Stack Web Programming</h4>
+    {# Page banner #}
+    <section id="home">
+        <div class="container-fluid" id="banner-back">
+            <img src="http://i.imgur.com/9iHvxm9.png" class="img-responsive">
+            <div class="container">
+                <div class="banner-phrase">
+                    <h1 class="animated fadeIn"><strong>Yorozuya Design</strong></h1>
+                    <h4 class="animated fadeInUp">Full Stack Web Programming</h4>
+                </div>
             </div>
+
         </div>
+    </section>
 
-    </div>
-</section>
-
-{#    page banner end#}
+    {#    page banner end#}
 
     {#About section#}
     <section id="two">
@@ -73,7 +76,10 @@
                         <h3 class="color-wht">A Quality Approach</h3>
                     </div>
                     <div class="col-md-4">
-                        <p class="about-para">Working with me my goal is to provide a system that will get you quality results. A way where customers will trust you and have your company stand out to them. With us you will be able to show what type of unique qualities you may provide to your clients.</p>
+                        <p class="about-para">Working with me my goal is to provide a system that will get you quality
+                            results. A way where customers will trust you and have your company stand out to them. With
+                            us you will be able to show what type of unique qualities you may provide to your
+                            clients.</p>
                         <p class="about-para">- Robin Lee Company Owner</p>
                     </div>
                 </div>
@@ -84,76 +90,80 @@
 
     {#Portfolio start#}
     <section id="portfolio">
-    <div class="container-fluid portfolio-contain">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h3 id="portfolio-header">Clear Results</h3>
-                </div>
-                <div class="col-md-8">
-                    <p id="inline-paragraph">Feel free to reach out. No smoke and mirrors and fancy programming jargon will be used from me.
-                    I will always communicated as clear as possible and really work to helping our clients getting
-                    awesome results! Websites will be made with whats best for you with many options.
-                    Seeing our clients happy is what we strive for.</p>
-                </div>
-            </div>
-        </div>
-        <br>
-        {#Portfolio Grid Items start here#}
-        <div class="row photos">
-            <div class="col-md-4 grid-box">
-                <div class="gallery-image">
-                    <a href="#"><img class="img-responsive" src="http://gilbertclinic.com/wp-content/uploads/2014/01/img-low-back-pain-e1481922023892-1200x600.jpg">
-                        <div class="gallery-text">
-                            <h3>Back Hacks</h3>
-                            <p>User based injury discussion board (Not Deployed)</p>
-                        </div>
-                    </a>
+        <div class="container-fluid portfolio-contain">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 id="portfolio-header">Clear Results</h3>
+                    </div>
+                    <div class="col-md-8">
+                        <p id="inline-paragraph">Feel free to reach out. No smoke and mirrors and fancy programming
+                            jargon will be used from me.
+                            I will always communicated as clear as possible and really work to helping our clients
+                            getting
+                            awesome results! Websites will be made with whats best for you with many options.
+                            Seeing our clients happy is what we strive for.</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4 grid-box">
-                <div class="gallery-image">
-                    <a href="#"><img class="img-responsive" src="https://i1.wp.com/files.hungryforever.com/wp-content/uploads/2017/08/04160648/o-DUNKIN-DONUTS-facebook.jpg?fit=1200%2C600">
-                        <div class="gallery-text">
-                            <h3>Yummy Donuts</h3>
-                            <p>Business Donut static website (Not Deployed)</p>
-                        </div>
-                    </a>
+            <br>
+            {#Portfolio Grid Items start here#}
+            <div class="row photos">
+                <div class="col-md-4 grid-box">
+                    <div class="gallery-image">
+                        <a href="#"><img class="img-responsive"
+                                         src="http://gilbertclinic.com/wp-content/uploads/2014/01/img-low-back-pain-e1481922023892-1200x600.jpg">
+                            <div class="gallery-text">
+                                <h3>Back Hacks</h3>
+                                <p>User based injury discussion board (Not Deployed)</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 grid-box">
+                    <div class="gallery-image">
+                        <a href="#"><img class="img-responsive"
+                                         src="https://i1.wp.com/files.hungryforever.com/wp-content/uploads/2017/08/04160648/o-DUNKIN-DONUTS-facebook.jpg?fit=1200%2C600">
+                            <div class="gallery-text">
+                                <h3>Yummy Donuts</h3>
+                                <p>Business Donut static website (Not Deployed)</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 grid-box">
+                    <div class="gallery-image">
+                        <a href="#"><img class="img-responsive"
+                                         src="http://www.gameslayercorps.it/wp-content/uploads/2015/10/TEKKEN-7-1200x600.jpg">
+                            <div class="gallery-text">
+                                <h3>Tekken G-Corp</h3>
+                                <p>Tekken frame data (Coming soon!)</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4 grid-box">
-                <div class="gallery-image">
-                    <a href="#"><img class="img-responsive" src="http://www.gameslayercorps.it/wp-content/uploads/2015/10/TEKKEN-7-1200x600.jpg">
-                        <div class="gallery-text">
-                            <h3>Tekken G-Corp</h3>
-                            <p>Tekken frame data (Coming soon!)</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        {#Portfolio grid ends#}
+            {#Portfolio grid ends#}
 
-    </div>
+        </div>
     </section>
     {#Portfolio end#}
 
     {#Services start#}
     <section id="services">
-    <div class="container-fluid services-container">
-        <div class="main col-md-12 myHalfCol">
-            <div class="col-md-6 half-one">
-                <img src="https://i.pinimg.com/originals/7d/0e/04/7d0e0439938431dac6c8e16191c1d0a3.jpg" alt="">
-            </div>
-            <div class="col-md-6 half-two" style="background-color: black;">
-                <div class="col-md-8 col-md-offset-2">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="column">
+                    <img src="https://i.pinimg.com/originals/7d/0e/04/7d0e0439938431dac6c8e16191c1d0a3.jpg" alt="">
+                </div>
+                <div class="column half-two" style="background-color: #0f0f0f;">
                     <h3 class="major wow slideInRight">Services</h3>
-                    <p class="wow slideInRight">With us setting up online services is easy. No hidden costs and monthly fees as our services will be
-                        consistent and professional.</p>
+                    <p class="wow slideInRight">With me setting up online services is easy. No hidden costs and
+                                    monthly fees as my services will be consistent and professional. I will
+                    always answer questions to the best of my abilities. </p>
                 </div>
             </div>
         </div>
-    </div>
     </section>
     {#Services end#}
 
@@ -189,11 +199,11 @@
                             </div>
                             <div class="col-md-6 form-group">
                                 <select class="form-control">
-                                  <option>Project</option>
-                                  <option>Web</option>
-                                  <option>Data Anaylsis</option>
-                                  <option>Brands</option>
-                                  <option>Other</option>
+                                    <option>Project</option>
+                                    <option>Web</option>
+                                    <option>Data Anaylsis</option>
+                                    <option>Brands</option>
+                                    <option>Other</option>
                                 </select>
                             </div>
                         </div>
@@ -226,8 +236,8 @@
                     -
                     <li><a class="btn-floating btn-lg btn-fb"><i class="fa fa-facebook"> </i></a></li>
                 </ul>
-                 <div class="footer-copyright">
-                     © 2017 Copyright: Yorozuya Design
+                <div class="footer-copyright">
+                    © 2017 Copyright: Yorozuya Design
                 </div>
             </div>
         </div>
@@ -238,11 +248,11 @@
 
 {# jQuery script #}
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-			  crossorigin="anonymous"></script>
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
 <script>
-    $(document).ready(function(){
-        $(".navbar-toggle").on("click",function () {
+    $(document).ready(function () {
+        $(".navbar-toggle").on("click", function () {
             $(this).toggleClass("active")
         });
     });
@@ -250,6 +260,7 @@
 {#bootstrap core javascript#}
 <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/navshrink.js') }}"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script><script>new WOW().init();</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+<script>new WOW().init();</script>
 </body>
 </html>
