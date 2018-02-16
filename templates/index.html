@@ -184,35 +184,27 @@
         <div class="container-fluid contact-block-two">
             <div class="container">
                 <div class="col-md-8 col-md-offset-4">
-                    <form id="inline-form" action="">
+                    {% from "includes/_formhelpers.html" import render_field %}
+                    <form id="inline-form" action="{{ url_for('index') }}" method="post">
                         <div class="row">
                             <div class="col-md-6 form-group">
-                                <input type="text" class="form-control" id="InputName1" placeholder="First Name">
-                            </div>
-                            <div class="col-md-6 form-group">
-                                <input type="text" class="form-control" id="InputName2" placeholder="Last Name">
+                                {{ render_field(form.name, class_="form-control") }}
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6 form-group">
-                                <input type="email" class="form-control" id="InputEmail" placeholder="Email address">
+                                {{ render_field(form.email, class_="form-control") }}
                             </div>
                             <div class="col-md-6 form-group">
-                                <select class="form-control">
-                                    <option>Project</option>
-                                    <option>Web</option>
-                                    <option>Data Anaylsis</option>
-                                    <option>Brands</option>
-                                    <option>Other</option>
-                                </select>
+                                {{ render_field(form.dropdown, class_="form-control") }}
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12 form-group">
-                                <textarea class="form-control" rows="3" placeholder="Message us"></textarea>
+                                {{ render_field(form.text, class_="form-control") }}
                             </div>
                         </div>
-                        <input id="submit-button" class="btn btn-default" type="submit" value="Submit Message">
+                        {{ render_field(form.submit, class_="form-control") }}
                     </form>
                 </div>
             </div>
